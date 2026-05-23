@@ -95,8 +95,8 @@ while opcion != 6:
     elif opcion == 5:
         mostrar_ventas()
     elif opcion == 6:
-        print("Programa finalizado")
-        print("\nGracias por usar mi programa")
+        print("programa finalizado")
+        print("\ngracias por usar mi programa")
     else:
         print("opcion no valida")
 
