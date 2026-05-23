@@ -39,10 +39,7 @@ class Producto:
 inventario = []
 ventas_dia = 0
 
-
-
 # funciones que vamos a usar
-
 
 def agregar_producto():
 
@@ -112,13 +109,10 @@ def mostrar_ventas():
 
 # la ventana que vamos a llamar tiendita
 
-
 ventana = Tk()
 
 ventana.title("Tiendita")
 ventana.geometry("600x600")
-
-
 
 # entradas donde podemos introducir datos
 
@@ -143,10 +137,7 @@ Label(ventana, text="Cantidad a vender").pack()
 entrada_vender = Entry(ventana)
 entrada_vender.pack()
 
-
- 
 # botones de la ventana
-
 
 Button(
     ventana,
@@ -178,17 +169,10 @@ Button(
     command=mostrar_ventas
 ).pack()
 
-
-
 # cuadro de texto
-
 
 cuadro_texto = Text(ventana, height=20, width=60)
 cuadro_texto.pack()
 
-
-
 # ejecutamos
-
-
 ventana.mainloop()
