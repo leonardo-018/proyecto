@@ -32,14 +32,11 @@ class Producto:
 
         else:
             cuadro_texto.insert(END, "No hay suficiente producto\n")
-
-
+            
 #nuestras variabakes a usar
 
 inventario = []
 ventas_dia = 0
-
-
 
 # funciones que vamos a usar
 
@@ -83,7 +80,6 @@ def mostrar_inventario():
                 f"Cantidad: {producto.cantidad}\n"
             )
 
-
 def buscar_producto():
 
     nombre = entrada_buscar.get()
@@ -98,9 +94,7 @@ def buscar_producto():
             )
 
             return
-
     cuadro_texto.insert(END, "\nProducto no encontrado\n")
-
 
 def vender_producto():
 
@@ -115,7 +109,6 @@ def vender_producto():
 
     cuadro_texto.insert(END, "\nProducto no encontrado\n")
 
-
 def mostrar_ventas():
 
     cuadro_texto.insert(
@@ -123,19 +116,13 @@ def mostrar_ventas():
         f"\nTotal vendido del día: ${ventas_dia}\n"
     )
 
-
 # la ventana que vamos a llamar tiendita
 
-
 ventana = Tk()
-
 ventana.title("Tiendita")
 ventana.geometry("600x600")
 
-
-
 # entradas donde podemos introducir datos
-
 
 Label(ventana, text="Nombre").pack()
 entrada_nombre = Entry(ventana)
@@ -158,9 +145,7 @@ entrada_vender = Entry(ventana)
 entrada_vender.pack()
 
 
- 
 # botones de la ventana
-
 
 Button(
     ventana,
@@ -206,13 +191,8 @@ Button(
 
 # cuadro de texto
 
-
 cuadro_texto = Text(ventana, height=20, width=60)
 cuadro_texto.pack()
 
-
-
 # ejecutamos
-
-
 ventana.mainloop()
