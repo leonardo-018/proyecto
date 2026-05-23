@@ -50,7 +50,7 @@ def eliminar():
                 f"\n{producto.nombre} eliminado correctamente\n"
                 )
             return
-        cuadro_texto.insert(END, "\nProducto no encontrado\n")
+    cuadro_texto.insert(END, "\nProducto no encontrado\n")
 
 def limpiar():
     cuadro_texto.delete("1.0", END)
